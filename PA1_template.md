@@ -33,7 +33,7 @@ StepsTotalDay$steps <- as.numeric(StepsTotalDay$steps)
 hist(StepsTotalDay$steps, xlab = "Total Steps per Day", main = "Histogram of Total number of Steps taken per day")
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png?raw=TRUE)
 
 ###Calculation of mean and median for number of steps taken by day
 
@@ -151,7 +151,7 @@ j <- 1
 DayType <- c(rep(0,nrow(data.activity2)))
 data.activity2 <- cbind(data.activity2, DayType)
 for (j in 1:nrow(data.activity2)) {
-  if((weekdays(data.activity2$date[j]) == "sábado") | (weekdays(data.activity2$date[j]) == "domingo" )){
+  if((weekdays(data.activity2$date[j]) == "sÃ¡bado") | (weekdays(data.activity2$date[j]) == "domingo" )){
     data.activity2$DayType[j] <- "Weekend"
   } else {data.activity2$DayType[j] <- "Weekday"}
   j <- j + 1
