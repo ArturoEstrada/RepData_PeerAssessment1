@@ -33,7 +33,7 @@ StepsTotalDay$steps <- as.numeric(StepsTotalDay$steps)
 hist(StepsTotalDay$steps, xlab = "Total Steps per Day", main = "Histogram of Total number of Steps taken per day")
 ```
 
-![](figure/unnamed-chunk-2-1.png)
+![](figure/unnamed-chunk-2-1.png)<!-- -->
 
 ###Calculation of mean and median for number of steps taken by day
 
